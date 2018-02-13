@@ -9,11 +9,8 @@
         <div class="card-body">
           <div class="row">
             {!! Form::model($post, ['method' => 'patch', 'route' => ['posts.update', $post->id]]) !!}
-
-
             {!! Form::text('name') !!}
             {!! Form::submit('update post') !!}
-
             {!! Form::close() !!}
           </div>
         </div>
